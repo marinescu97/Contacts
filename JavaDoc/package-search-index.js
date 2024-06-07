@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.marinescu.contacts","l":"com.marinescu.contacts"},{"m":"com.marinescu.contacts","l":"com.marinescu.contacts.model"}];updateSearchResults();

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<!-- This file represents a dialog with a form for adding or updating a contact. -->
+<DialogPane fx:id="mainContainer" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.marinescu.contacts.DialogController">
+    <headerText>
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="First name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="fNameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Last name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="lNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Phone number: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="pNumberField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Notes: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="notesField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

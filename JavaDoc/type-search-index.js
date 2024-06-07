@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.marinescu.contacts","l":"Application"},{"p":"com.marinescu.contacts.model","l":"Contact"},{"p":"com.marinescu.contacts","l":"ContactsController"},{"p":"com.marinescu.contacts.model","l":"Data"},{"p":"com.marinescu.contacts","l":"DialogController"}];updateSearchResults();

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!-- This file displays the contact list -->
+<BorderPane fx:id="borderPane" fx:controller="com.marinescu.contacts.ContactsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+       <MenuBar BorderPane.alignment="CENTER">
+           <Menu mnemonicParsing="false" text="Contact">
+               <MenuItem mnemonicParsing="false" text="Add" onAction="#showNewItemDialog"/>
+               <MenuItem mnemonicParsing="false" text="Update" onAction="#showUpdateDialog"/>
+               <MenuItem mnemonicParsing="false" text="Delete" onAction="#handleDeleteMenuItem"/>
+           </Menu>
+       </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="contactsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" onKeyPressed="#handleDeleteKey">
+        <columns>
+            <TableColumn fx:id="firstNameColumn" prefWidth="137.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="128.0" text="Last Name" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="132.0" text="Phone Number" />
+            <TableColumn fx:id="notesColumn" prefWidth="202.0" text="Notes" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
